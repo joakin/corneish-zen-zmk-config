@@ -12,7 +12,6 @@
 / {
     chosen {
         zmk,matrix_transform = &default_transform;
-        //zmk,matrix_transform = &five_column_transform;
     };
 };
 
@@ -83,10 +82,10 @@
 // | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |   |     | HOME  | END   |     |     |      |
 //                     |     |     |     |   |     |       |       |
             bindings = <
-   &trans  &none        &none        &none        &none        &none          &none    &none    &none  &none     &kp DEL &trans
-   &trans  &none        &none        &none        &none        &none          &kp LEFT &kp DOWN &kp UP &kp RIGHT &none   &trans
-   &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none    &none    &none  &none     &none   &trans
-                          	         &trans       &trans       &trans         &trans   &trans   &trans
+   &trans  &none        &none        &none        &none        &none          &none    &kp PG_UP &kp PG_DN &none     &kp DEL &trans
+   &trans  &none        &none        &none        &none        &none          &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none   &trans
+   &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none    &kp HOME  &kp END   &none     &none   &trans
+                                     &trans       &trans       &trans         &trans   &trans    &trans
             >;
         };
     };
